@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-peachtreecorners",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "City of Peachtree Corners GIS — Peachtree Corners, Georgia open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-8d67f0369da3270ea344df86ec00035e3592dcb0e49d9ec4a97eb9a258a25dca",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-5b15e880ab00dc0a453894c33e038c492aba41b000ea93d4fbbbc3fdf67e4883",
+    "sourceCommit": "454041882179fae560c06e770b6b7a2f33970015"
   }
 }
