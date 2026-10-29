@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-peachtreecorners",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "City of Peachtree Corners GIS — Peachtree Corners, Georgia open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-peachtreecorners": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-peachtreecorners"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-peachtreecorners.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-peachtreecorners",
   "pipeworx": {
-    "sourceHash": "v1-ead9593d3ecc49fc4f8edc349477d314bc6d8cca9fde9d0217d8a162fed9a7f8",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "arcgis-peachtreecorners",
+    "gatewaySlug": "arcgis-peachtreecorners",
+    "sourceHash": "v1-0a57db7a1a611cf2beef04a9f2c58c01d79291bb2eded0f429b39b88071c1689",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
